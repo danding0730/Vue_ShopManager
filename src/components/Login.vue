@@ -8,11 +8,11 @@
      <el-form ref="loginFormRef" class="login_form" :model="loginForm" :rules="loginFormRules">
             <!-- 用户名输入区 -->
         <el-form-item prop="username">
-          <el-input prefix-icon="iconfont icon-user" v-model="loginForm.username" ></el-input>
+          <el-input prefix-icon="iconfont icon-user" v-model="loginForm.username" placeholder="请输入用户名" ></el-input>
         </el-form-item>
      <!-- 密码输入区 -->
         <el-form-item prop="password">
-          <el-input prefix-icon="iconfont icon-3702mima" v-model="loginForm.password" type="password"></el-input>
+          <el-input prefix-icon="iconfont icon-3702mima" v-model="loginForm.password" type="password" placeholder="请输入密码"></el-input>
         </el-form-item>
      <!-- 按钮区域 -->
         <el-form-item class="btns">
@@ -31,8 +31,8 @@ export default {
   data () {
     return {
       loginForm: {
-        username: 'admin',
-        password: '123456'
+        username: '',
+        password: ''
       },
       // 表单的验证规则对象
       loginFormRules: {
