@@ -6,7 +6,7 @@
         <img src="../assets/heima.png" alt />
         <span>小猪商城后台管理系统</span>
       </div>
-      <el-button type="info" @click="quitLogin">退出登录</el-button>
+      <el-button type="info" @click="quitLogin" round size="medium" icon="el-icon-switch-button">退出登录</el-button>
     </el-header>
     <!-- 页面主体区域 -->
     <el-container>
@@ -23,7 +23,7 @@
               <!-- 文本 -->
               <span>{{item.authName}}</span>
             </template>
-            <!-- 二级菜单 -->
+            <!-- 二级菜单 index属性加上path值可以定位到子组件 -->
             <el-menu-item :index="'/' + subItem.path + ''" v-for="subItem in item.children"
             :key="subItem.id" @click="saveNavState('/' + subItem.path)">
               <template slot="title">
