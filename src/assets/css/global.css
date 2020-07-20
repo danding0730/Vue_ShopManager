@@ -41,3 +41,11 @@ body,
 .el-form-item.is-success .el-input__validateIcon {
     color: #67C23A
 }
+
+.el-cascader-menu {
+    height: 300px;
+}
+
+.el-cascader{
+    width: 100%;
+}
