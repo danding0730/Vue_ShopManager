@@ -194,7 +194,7 @@ export default {
           {
             required: true,
             trigger: 'blue',
-            message: '分类名称不能为空！'
+            message: '分类名称不能为空'
           }
         ]
       }
@@ -271,7 +271,6 @@ export default {
       this.addCateForm.cat_pid = 0
     },
     async deleteCate(id) {
-      console.log(id)
       const confirmMsg = await this.$confirm(
         '此操作将永久删除该分类，是否继续？',
         '提示',
