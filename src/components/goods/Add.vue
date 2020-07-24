@@ -82,7 +82,7 @@
               :headers="headerObj"
               :on-success="handleSuccess"
             >
-              <el-button size="small" type="primary">点击上传</el-button>
+              <el-button type="primary" icon="el-icon-upload2">点击上传</el-button>
             </el-upload>
           </el-tab-pane>
           <el-tab-pane label="商品内容" name="4">
